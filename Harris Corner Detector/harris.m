@@ -41,8 +41,9 @@ R = ((R>threshold) & ((imdilate(R, strel('square', 3))==R))) ; %.* sigma;
 % Display corners
 figure
 imshow(R,[]);
-
-% Return the coordinates
+scale_space = cell(13,1);
+%scale_space{1} = 
+% Return the coordinatesha
 [r, c]=find(R,sum(R(:)));
 
 
